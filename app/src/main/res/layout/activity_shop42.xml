@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Shop42"
+    android:background="#070707">
+
+    <include layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottomview_41"
+        android:layout_below="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical"
+                android:paddingLeft="15.5dp"
+                android:paddingRight="15.5dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/panel_41">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center"
+                        android:layout_marginBottom="25dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/shape_rectangle"
+                            android:fontFamily="@font/ari"
+                            android:gravity="center"
+                            android:letterSpacing="0.5"
+                            android:paddingLeft="4dp"
+                            android:paddingRight="4dp"
+                            android:text="FASHION 2017"
+                            android:textColor="#ffffff"
+                            android:textSize="6sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="14dp"
+                            android:fontFamily="@font/sf_pro_display_regular"
+                            android:lineSpacingExtra="3dp"
+                            android:layout_marginLeft="55dp"
+                            android:layout_marginRight="55dp"
+                            android:text="New season  new shoes. Espadrilles are a
+perfect choice for everyday style."
+                            android:gravity="center"
+                            android:textColor="#ffffff"
+                            android:textSize="11dp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="30dp"
+                            android:src="@drawable/ic_flag" />
+
+
+                    </LinearLayout>
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sf_pro_display_regular"
+                    android:paddingTop="15.5dp"
+                    android:paddingRight="15.5dp"
+                    android:paddingBottom="40dp"
+                    android:text="A practical and accurate model youth sneakers in soft leather."
+                    android:textColor="#ffffff"
+                    android:textSize="23sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#338d8d8d" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="15.5dp"
+                    android:paddingTop="17dp"
+                    android:paddingBottom="17dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/sf_pro_display_regular"
+                        android:text="COLOR AND SIZE"
+                        android:textColor="#ffffff"
+                        android:textSize="11sp" />
+
+                    <ImageView
+                        android:layout_width="7.5dp"
+                        android:layout_height="7.5dp"
+                        android:layout_marginRight="15.5dp"
+                        android:src="@drawable/ic_close" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/color_recyclerview42"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:overScrollMode="never"
+                        android:paddingLeft="15.5dp"
+                        android:paddingRight="15.5dp"/>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/size_recyclerview42"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:overScrollMode="never" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15.5dp"
+                android:layout_marginTop="29dp"
+                android:layout_marginRight="4dp"
+                android:fontFamily="@font/sf_pro_display_regular"
+                android:lineSpacingExtra="7dp"
+                android:paddingBottom="12dp"
+                android:text="Ankle boots are so good that other similar models don&apos;t compete! Bought without hesitation. Elegant to dizziness, leg comfortable as knitted socks. Not for every day - for the release of &quot;into the light&quot;. Painfully thin and delicate skin. On a wide foot. Very glad I found these! Despite the price... Walgama in the Volga."
+                android:textColor="#6e6e70"
+                android:textSize="11sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/bottomview_41"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-5dp"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:paddingLeft="15.5dp"
+        android:paddingTop="5dp"
+        android:paddingRight="15.5dp">
+
+        <FrameLayout
+            android:layout_width="45dp"
+            android:layout_height="45dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|left"
+                android:src="@drawable/profile41_1" />
+
+            <FrameLayout
+                android:layout_width="19dp"
+                android:layout_height="19dp"
+                android:layout_gravity="right"
+                android:background="@drawable/shape_rectangle42_white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="4"
+                    android:textColor="#000000"
+                    android:textSize="9.6sp" />
+            </FrameLayout>
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/sf_pro_display_regular"
+            android:text="Sarah Thomson"
+            android:textColor="#ffffff"
+            android:textSize="13.5sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="31dp"
+                    android:layout_height="31dp"
+                    android:layout_marginLeft="52dp"
+                    android:src="@drawable/profile41_2" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="31dp"
+                    android:layout_height="31dp"
+                    android:layout_marginLeft="78dp"
+                    android:src="@drawable/profile41_3" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="31dp"
+                    android:layout_height="31dp"
+                    android:layout_marginLeft="104dp"
+                    android:src="@drawable/profile41_4" />
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="130dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="31dp"
+                        android:layout_height="31dp"
+                        android:src="@drawable/ic_blank_42" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/sf_pro_display_regular"
+                        android:text="+7"
+                        android:textColor="#000000"
+                        android:textSize="11sp" />
+                </FrameLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="35dp"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="#ffffff"
+        android:src="@drawable/ic_add_black"
+        app:maxImageSize="10dp"
+        app:borderWidth="0dp"
+        app:elevation="0dp"
+        app:fabCustomSize="43dp" />
+</RelativeLayout>
